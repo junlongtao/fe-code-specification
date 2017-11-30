@@ -52,14 +52,9 @@ UserService.js
 ```
 
 ## 其他规范：
-
-[https://github.com/junlongtao/fe-code-specification/blob/master/HTML.md](HTML编码规范)
-
-[https://github.com/junlongtao/fe-code-specification/blob/master/CSS.md](CSS编码规范)
-
-[https://github.com/junlongtao/fe-code-specification/blob/master/JAVASCRIPT.md](JAVASCRIPT编码规范)
-
-
+- [HTML](HTML.md)
+- [CSS](CSS.md)
+- [JavaScript](JavaScript.md)
 
 
 

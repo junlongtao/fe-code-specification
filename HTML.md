@@ -27,8 +27,8 @@
 
 2.标签语义化，如，用 heading 元素来定义头部标题，p 元素来定义文字段落，用 a 元素来定义链接锚点。
 
-3.不使用行内样式（<style>.no-good{}</style>), 不使用style属性（<hr style="border-top: 5px solid black">），不使用行内脚本（<script>alert('no good')</script>）
-，不使用表象元素（i.e. <b>, <u>, <center>, <font>, <b>）， 不使用表象 class 名（i.e. red, left, center）
+3.不使用行内样式（```<style>.no-good{}</style>```), 不使用style属性（```<hr style="border-top: 5px solid black">```），不使用行内脚本（```<script>alert('no good')</script>```）
+，不使用表象元素（```i.e. <b>, <u>, <center>, <font>, <b>```）， 不使用表象 class 名（```i.e. red, left, center```）
 
 4.HTML只关注内容，不用于展现设计
 ```
@@ -71,28 +71,28 @@
 ```
 //推荐
 <blockquote>
-  <p><em>Space</em>, the final frontier.</p>
+    <p><em>Space</em>, the final frontier.</p>
 </blockquote>
- 
+
 <ul>
-  <li>Moe</li>
-  <li>Larry</li>
-  <li>Curly</li>
+    <li>Moe</li>
+    <li>Larry</li>
+    <li>Curly</li>
 </ul>
- 
+
 <table>
-  <thead>
+    <thead>
     <tr>
-      <th scope="col">Income</th>
-      <th scope="col">Taxes</th>
+        <th scope="col">Income</th>
+        <th scope="col">Taxes</th>
     </tr>
-  </thead>
-  <tbody>
+    </thead>
+    <tbody>
     <tr>
-      <td>$ 5.00</td>
-      <td>$ 4.50</td>
+        <td>$ 5.00</td>
+        <td>$ 4.50</td>
     </tr>
-  </tbody>
+    </tbody>
 </table>
 ```
 

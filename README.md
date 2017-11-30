@@ -1,109 +1,65 @@
 # fe-code-specification
 frontend code specification
 
-# html
+# 一般规范
 
-1.引入js防止最后，添加async
+1.文件/资源命名
+
+使用小写单词，减号分隔，min后缀使用点号
 ```
 //不推荐
-<html>
-  <head>
-    <link rel="stylesheet" href="main.css">
-    <script src="main.js" async></script>
-  </head>
-  <body>
-    <!-- body goes here -->
-  </body>
-</html>
+MyScript.js
+myCamelCaseName.css
+i_love_underscores.html
+1001-scripts.js
+my-file-min.css
 //推荐
-<html>
-  <head>
-    <link rel="stylesheet" href="main.css">
-  </head>
-  <body>
-    <!-- body goes here -->
- 
-    <script src="main.js" async></script>
-  </body>
-</html>
+my-script.js
+my-camel-case-name.css
+i-love-underscores.html
+thousand-and-one-scripts.js
+my-file.min.css
 ```
 
-2.标签语义化，如，用 heading 元素来定义头部标题，p 元素来定义文字段落，用 a 元素来定义链接锚点。
+2.协议
 
-3.不使用行内样式（<style>.no-good{}</style>), 不使用style属性（<hr style="border-top: 5px solid black">），不使用行内脚本（<script>alert('no good')</script>）
-，不使用表象元素（i.e. <b>, <u>, <center>, <font>, <b>）， 不使用表象 class 名（i.e. red, left, center）
-
-4.HTML只关注内容，不用于展现设计
+不要指定引入资源所带的具体协议
 ```
 //不推荐
-<span class="text-box">
-  <span class="square"></span>
-  See the square next to me?
-</span>
-.text-box > .square {
-  display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  background-color: red;
+<script src="http://cdn.com/foundation.min.js"></script>
+.example {
+  background: url(http://static.example.com/images/bg.jpg);
 }
-
 //推荐
-<span class="text-box">
-  See the square next to me?
-</span>
-.text-box:before {
-  content: "";
-  display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  background-color: red;
+<script src="//cdn.com/foundation.min.js"></script>
+.example {
+  background: url(//static.example.com/images/bg.jpg);
 }
 ```
 
-5.省略type属性
+3.文本缩进，一次使用4个空格 
+
+4.js类文件，组件文件，服务文件名使用首字母大写单词命名
 ```
 //不推荐
-<link rel="stylesheet" href="main.css" type="text/css">
-<script src="main.js" type="text/javascript"></script>
+home-page.js
+button.js
+user_service.js
 //推荐
-<link rel="stylesheet" href="main.css">
-<script src="main.js"></script>
+HomePage.js
+Button.js
+UserService.js
 ```
 
-6.块状元素，列表元素，表格元素后，加空白行进行换行，并对子孙元素缩进
-```
-//推荐
-<blockquote>
-  <p><em>Space</em>, the final frontier.</p>
-</blockquote>
- 
-<ul>
-  <li>Moe</li>
-  <li>Larry</li>
-  <li>Curly</li>
-</ul>
- 
-<table>
-  <thead>
-    <tr>
-      <th scope="col">Income</th>
-      <th scope="col">Taxes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>$ 5.00</td>
-      <td>$ 4.50</td>
-    </tr>
-  </tbody>
-</table>
-```
 
-7.使用双引号
-```
-//不推荐
-<div class='news-article'></div>
-//推荐
-<div class="news-article"></div>
 
-```
+
+
+
+
+
+
+
+
+
+

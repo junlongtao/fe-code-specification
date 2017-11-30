@@ -1,5 +1,4 @@
-# fe-code-specification
-frontend code specification
+# 前端编码规范
 
 ## 一般规范
 
